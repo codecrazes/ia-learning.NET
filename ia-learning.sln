@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36121.58
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ia-learning", "ia-learning\ia-learning.csproj", "{C77B5B80-8CF3-418F-9911-9957A82BC8A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ia-learning.Tests", "Ia-learning.Tests\ia-learning.Tests.csproj", "{A8803AB5-95EB-46A1-99ED-E8BE98427B88}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C77B5B80-8CF3-418F-9911-9957A82BC8A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C77B5B80-8CF3-418F-9911-9957A82BC8A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C77B5B80-8CF3-418F-9911-9957A82BC8A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C77B5B80-8CF3-418F-9911-9957A82BC8A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8803AB5-95EB-46A1-99ED-E8BE98427B88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8803AB5-95EB-46A1-99ED-E8BE98427B88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8803AB5-95EB-46A1-99ED-E8BE98427B88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8803AB5-95EB-46A1-99ED-E8BE98427B88}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E693A18C-21A5-4BE2-9B02-57C4100605CF}
+	EndGlobalSection
+EndGlobal

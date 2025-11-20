@@ -1,0 +1,6 @@
+@ia_learning_HostAddress = http://localhost:5056
+
+GET {{ia_learning_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

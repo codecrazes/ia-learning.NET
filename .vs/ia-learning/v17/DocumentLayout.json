@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\ia-learning.NET\\ia-learning\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C77B5B80-8CF3-418F-9911-9957A82BC8A4}|ia-learning\\ia-learning.csproj|c:\\ia-learning.net\\ia-learning\\ia-learning\\controllers\\v2\\healthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C77B5B80-8CF3-418F-9911-9957A82BC8A4}|ia-learning\\ia-learning.csproj|solutionrelative:ia-learning\\controllers\\v2\\healthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C77B5B80-8CF3-418F-9911-9957A82BC8A4}|ia-learning\\ia-learning.csproj|c:\\ia-learning.net\\ia-learning\\ia-learning\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C77B5B80-8CF3-418F-9911-9957A82BC8A4}|ia-learning\\ia-learning.csproj|solutionrelative:ia-learning\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C77B5B80-8CF3-418F-9911-9957A82BC8A4}|ia-learning\\ia-learning.csproj|c:\\ia-learning.net\\ia-learning\\ia-learning\\hateoas\\hateoashelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C77B5B80-8CF3-418F-9911-9957A82BC8A4}|ia-learning\\ia-learning.csproj|solutionrelative:ia-learning\\hateoas\\hateoashelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C77B5B80-8CF3-418F-9911-9957A82BC8A4}|ia-learning\\ia-learning.csproj|c:\\ia-learning.net\\ia-learning\\ia-learning\\hateoas\\linkdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C77B5B80-8CF3-418F-9911-9957A82BC8A4}|ia-learning\\ia-learning.csproj|solutionrelative:ia-learning\\hateoas\\linkdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8803AB5-95EB-46A1-99ED-E8BE98427B88}|Ia-learning.Tests\\ia-learning.Tests.csproj|c:\\ia-learning.net\\ia-learning\\ia-learning.tests\\tarefacontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8803AB5-95EB-46A1-99ED-E8BE98427B88}|Ia-learning.Tests\\ia-learning.Tests.csproj|solutionrelative:ia-learning.tests\\tarefacontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C77B5B80-8CF3-418F-9911-9957A82BC8A4}|ia-learning\\ia-learning.csproj|c:\\ia-learning.net\\ia-learning\\ia-learning\\controllers\\v1\\tarefacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C77B5B80-8CF3-418F-9911-9957A82BC8A4}|ia-learning\\ia-learning.csproj|solutionrelative:ia-learning\\controllers\\v1\\tarefacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C77B5B80-8CF3-418F-9911-9957A82BC8A4}|ia-learning\\ia-learning.csproj|c:\\ia-learning.net\\ia-learning\\ia-learning\\models\\tarefa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C77B5B80-8CF3-418F-9911-9957A82BC8A4}|ia-learning\\ia-learning.csproj|solutionrelative:ia-learning\\models\\tarefa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8803AB5-95EB-46A1-99ED-E8BE98427B88}|Ia-learning.Tests\\ia-learning.Tests.csproj|c:\\ia-learning.net\\ia-learning\\ia-learning.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8803AB5-95EB-46A1-99ED-E8BE98427B88}|Ia-learning.Tests\\ia-learning.Tests.csproj|solutionrelative:ia-learning.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C77B5B80-8CF3-418F-9911-9957A82BC8A4}|ia-learning\\ia-learning.csproj|c:\\ia-learning.net\\ia-learning\\ia-learning\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C77B5B80-8CF3-418F-9911-9957A82BC8A4}|ia-learning\\ia-learning.csproj|solutionrelative:ia-learning\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HealthController.cs",
+              "DocumentMoniker": "C:\\ia-learning.NET\\ia-learning\\ia-learning\\Controllers\\V2\\HealthController.cs",
+              "RelativeDocumentMoniker": "ia-learning\\Controllers\\V2\\HealthController.cs",
+              "ToolTip": "C:\\ia-learning.NET\\ia-learning\\ia-learning\\Controllers\\V2\\HealthController.cs",
+              "RelativeToolTip": "ia-learning\\Controllers\\V2\\HealthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T04:55:33.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HateoasHelper.cs",
+              "DocumentMoniker": "C:\\ia-learning.NET\\ia-learning\\ia-learning\\Hateoas\\HateoasHelper.cs",
+              "RelativeDocumentMoniker": "ia-learning\\Hateoas\\HateoasHelper.cs",
+              "ToolTip": "C:\\ia-learning.NET\\ia-learning\\ia-learning\\Hateoas\\HateoasHelper.cs",
+              "RelativeToolTip": "ia-learning\\Hateoas\\HateoasHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T04:54:22.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LinkDto.cs",
+              "DocumentMoniker": "C:\\ia-learning.NET\\ia-learning\\ia-learning\\Hateoas\\LinkDto.cs",
+              "RelativeDocumentMoniker": "ia-learning\\Hateoas\\LinkDto.cs",
+              "ToolTip": "C:\\ia-learning.NET\\ia-learning\\ia-learning\\Hateoas\\LinkDto.cs",
+              "RelativeToolTip": "ia-learning\\Hateoas\\LinkDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T04:53:32.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Tarefa.cs",
+              "DocumentMoniker": "C:\\ia-learning.NET\\ia-learning\\ia-learning\\Models\\Tarefa.cs",
+              "RelativeDocumentMoniker": "ia-learning\\Models\\Tarefa.cs",
+              "ToolTip": "C:\\ia-learning.NET\\ia-learning\\ia-learning\\Models\\Tarefa.cs",
+              "RelativeToolTip": "ia-learning\\Models\\Tarefa.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T04:42:11.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TarefaController.cs",
+              "DocumentMoniker": "C:\\ia-learning.NET\\ia-learning\\ia-learning\\Controllers\\V1\\TarefaController.cs",
+              "RelativeDocumentMoniker": "ia-learning\\Controllers\\V1\\TarefaController.cs",
+              "ToolTip": "C:\\ia-learning.NET\\ia-learning\\ia-learning\\Controllers\\V1\\TarefaController.cs",
+              "RelativeToolTip": "ia-learning\\Controllers\\V1\\TarefaController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEwAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T04:29:33.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\ia-learning.NET\\ia-learning\\ia-learning.Tests\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "ia-learning.Tests\\UnitTest1.cs",
+              "ToolTip": "C:\\ia-learning.NET\\ia-learning\\ia-learning.Tests\\UnitTest1.cs",
+              "RelativeToolTip": "ia-learning.Tests\\UnitTest1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T04:17:33.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TarefaControllerTests.cs",
+              "DocumentMoniker": "C:\\ia-learning.NET\\ia-learning\\Ia-learning.Tests\\TarefaControllerTests.cs",
+              "RelativeDocumentMoniker": "Ia-learning.Tests\\TarefaControllerTests.cs",
+              "ToolTip": "C:\\ia-learning.NET\\ia-learning\\Ia-learning.Tests\\TarefaControllerTests.cs",
+              "RelativeToolTip": "Ia-learning.Tests\\TarefaControllerTests.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAAAD8AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T04:00:12.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\ia-learning.NET\\ia-learning\\ia-learning\\Program.cs",
+              "RelativeDocumentMoniker": "ia-learning\\Program.cs",
+              "ToolTip": "C:\\ia-learning.NET\\ia-learning\\ia-learning\\Program.cs",
+              "RelativeToolTip": "ia-learning\\Program.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAuwCsAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T03:39:13.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\ia-learning.NET\\ia-learning\\ia-learning\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "ia-learning\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\ia-learning.NET\\ia-learning\\ia-learning\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "ia-learning\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAwwBAAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T04:16:38.513Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
