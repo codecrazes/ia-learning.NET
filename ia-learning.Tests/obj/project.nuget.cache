@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "L4t3XqtnO+Q=",
+  "dgSpecHash": "j+OzJ9j1Fxg=",
   "success": true,
-  "projectFilePath": "C:\\ia-learning.NET\\ia-learning\\ia-learning.Tests\\ia-learning.Tests.csproj",
+  "projectFilePath": "C:\\ia-learning.NET\\ia-learning\\Ia-learning.Tests\\ia-learning.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\assis\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\assis\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning\\5.1.0\\microsoft.aspnetcore.mvc.versioning.5.1.0.nupkg.sha512",
@@ -63,9 +63,9 @@
       "code": "NU1603",
       "level": "Warning",
       "message": "ia-learning depende de Oracle.EntityFrameworkCore (>= 8.21.110) mas Oracle.EntityFrameworkCore 8.21.110 não foi encontrado. Oracle.EntityFrameworkCore 8.21.121 foi resolvido.",
-      "projectPath": "C:\\ia-learning.NET\\ia-learning\\ia-learning.Tests\\ia-learning.Tests.csproj",
+      "projectPath": "C:\\ia-learning.NET\\ia-learning\\Ia-learning.Tests\\ia-learning.Tests.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\ia-learning.NET\\ia-learning\\ia-learning.Tests\\ia-learning.Tests.csproj",
+      "filePath": "C:\\ia-learning.NET\\ia-learning\\Ia-learning.Tests\\ia-learning.Tests.csproj",
       "libraryId": "Oracle.EntityFrameworkCore",
       "targetGraphs": [
         "net8.0"

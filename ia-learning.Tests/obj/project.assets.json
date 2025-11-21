@@ -2932,11 +2932,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\ia-learning.NET\\ia-learning\\ia-learning.Tests\\ia-learning.Tests.csproj",
+      "projectUniqueName": "C:\\ia-learning.NET\\ia-learning\\Ia-learning.Tests\\ia-learning.Tests.csproj",
       "projectName": "ia-learning.Tests",
-      "projectPath": "C:\\ia-learning.NET\\ia-learning\\ia-learning.Tests\\ia-learning.Tests.csproj",
+      "projectPath": "C:\\ia-learning.NET\\ia-learning\\Ia-learning.Tests\\ia-learning.Tests.csproj",
       "packagesPath": "C:\\Users\\assis\\.nuget\\packages\\",
-      "outputPath": "C:\\ia-learning.NET\\ia-learning\\ia-learning.Tests\\obj\\",
+      "outputPath": "C:\\ia-learning.NET\\ia-learning\\Ia-learning.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

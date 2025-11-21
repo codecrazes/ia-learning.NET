@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ia-learning.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d86b198c33187fde1685b4a5191c39b32b562209")]
 [assembly: System.Reflection.AssemblyProductAttribute("ia-learning.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ia-learning.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
