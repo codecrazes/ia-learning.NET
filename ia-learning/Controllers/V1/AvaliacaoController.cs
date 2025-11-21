@@ -1,5 +1,6 @@
-﻿using ia_learning.Models;
-using ia_learning.Data;
+﻿using ia_learning.Data;
+using ia_learning.DTOs;
+using ia_learning.Hateoas;
 using ia_learning.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -20,15 +21,24 @@ namespace ia_learning.Controllers.V1
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            var avaliacoes = await _context.Avaliacoes
+            var list = await _context.Avaliacoes
                 .Include(a => a.Usuario)
                 .Include(a => a.IA)
                 .ToListAsync();
 
-            return Ok(avaliacoes);
+            var response = LinkHelper.WithLinks(
+                list,
+                Url,
+                "GetAvaliacao",
+                "UpdateAvaliacao",
+                "DeleteAvaliacao",
+                a => a.Id
+            );
+
+            return Ok(response);
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("{id}", Name = "GetAvaliacao")]
         public async Task<IActionResult> Get(int id)
         {
             var avaliacao = await _context.Avaliacoes
@@ -36,40 +46,82 @@ namespace ia_learning.Controllers.V1
                 .Include(a => a.IA)
                 .FirstOrDefaultAsync(a => a.Id == id);
 
-            return avaliacao == null ? NotFound() : Ok(avaliacao);
+            if (avaliacao == null)
+                return NotFound();
+
+            var result = LinkHelper.WithLinks(
+                avaliacao,
+                Url,
+                "GetAvaliacao",
+                "UpdateAvaliacao",
+                "DeleteAvaliacao",
+                id
+            );
+
+            return Ok(result);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(Avaliacao model)
+        public async Task<IActionResult> Create(AvaliacaoCreateDto dto)
         {
-            model.Data = DateTime.Now;
+            var model = new Avaliacao
+            {
+                Nota = dto.Nota,
+                Comentario = dto.Comentario,
+                UsuarioId = dto.UsuarioId,
+                IAId = dto.IAId,
+                Data = DateTime.Now
+            };
 
             _context.Avaliacoes.Add(model);
             await _context.SaveChangesAsync();
 
-            return Ok(model);
+            var result = LinkHelper.WithLinks(
+                model,
+                Url,
+                "GetAvaliacao",
+                "UpdateAvaliacao",
+                "DeleteAvaliacao",
+                model.Id
+            );
+
+            return Ok(result);
         }
 
-        [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, Avaliacao model)
+        [HttpPut("{id}", Name = "UpdateAvaliacao")]
+        public async Task<IActionResult> Update(int id, AvaliacaoCreateDto dto)
         {
             var avaliacao = await _context.Avaliacoes.FindAsync(id);
-            if (avaliacao == null) return NotFound();
 
-            avaliacao.Nota = model.Nota;
-            avaliacao.Comentario = model.Comentario;
-            avaliacao.UsuarioId = model.UsuarioId;
-            avaliacao.IAId = model.IAId;
+            if (avaliacao == null)
+                return NotFound();
+
+            avaliacao.Nota = dto.Nota;
+            avaliacao.Comentario = dto.Comentario;
+            avaliacao.UsuarioId = dto.UsuarioId;
+            avaliacao.IAId = dto.IAId;
 
             await _context.SaveChangesAsync();
-            return Ok(avaliacao);
+
+            var result = LinkHelper.WithLinks(
+                avaliacao,
+                Url,
+                "GetAvaliacao",
+                "UpdateAvaliacao",
+                "DeleteAvaliacao",
+                avaliacao.Id
+            );
+
+            return Ok(result);
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete("{id}", Name = "DeleteAvaliacao")]
         public async Task<IActionResult> Delete(int id)
         {
             var avaliacao = await _context.Avaliacoes.FindAsync(id);
-            if (avaliacao == null) return NotFound();
+
+            if (avaliacao == null)
+                return NotFound();
 
             _context.Avaliacoes.Remove(avaliacao);
             await _context.SaveChangesAsync();

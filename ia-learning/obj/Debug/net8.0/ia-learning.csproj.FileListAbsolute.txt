@@ -126,3 +126,4 @@ C:\ia-learning.NET\ia-learning\ia-learning\bin\Debug\net8.0\runtimes\unix\lib\ne
 C:\ia-learning.NET\ia-learning\ia-learning\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 C:\ia-learning.NET\ia-learning\ia-learning\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\ia-learning.NET\ia-learning\ia-learning\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\ia-learning.NET\ia-learning\ia-learning\obj\Debug\net8.0\ia-learning.sourcelink.json

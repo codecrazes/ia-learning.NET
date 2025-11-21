@@ -1,4 +1,5 @@
 ﻿using ia_learning.Data;
+using ia_learning.Hateoas;
 using ia_learning.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -17,14 +18,40 @@ namespace ia_learning.Controllers.V1
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAll() =>
-            Ok(await _context.IAs.ToListAsync());
+        public async Task<IActionResult> GetAll()
+        {
+            var list = await _context.IAs.ToListAsync();
 
-        [HttpGet("{id}")]
+            var response = LinkHelper.WithLinks(
+                list,
+                Url,
+                "GetIA",
+                "UpdateIA",
+                "DeleteIA",
+                i => i.Id
+            );
+
+            return Ok(response);
+        }
+
+        [HttpGet("{id}", Name = "GetIA")]
         public async Task<IActionResult> Get(int id)
         {
-            var ia = await _context.IAs.FindAsync(id);
-            return ia == null ? NotFound() : Ok(ia);
+            var ia = await _context.IAs.FirstOrDefaultAsync(i => i.Id == id);
+
+            if (ia == null)
+                return NotFound();
+
+            var result = LinkHelper.WithLinks(
+                ia,
+                Url,
+                "GetIA",
+                "UpdateIA",
+                "DeleteIA",
+                id
+            );
+
+            return Ok(result);
         }
 
         [HttpPost]
@@ -33,10 +60,19 @@ namespace ia_learning.Controllers.V1
             _context.IAs.Add(model);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction(nameof(Get), new { id = model.Id }, model);
+            var result = LinkHelper.WithLinks(
+                model,
+                Url,
+                "GetIA",
+                "UpdateIA",
+                "DeleteIA",
+                model.Id
+            );
+
+            return Ok(result);
         }
 
-        [HttpPut("{id}")]
+        [HttpPut("{id}", Name = "UpdateIA")]
         public async Task<IActionResult> Update(int id, IA model)
         {
             var ia = await _context.IAs.FindAsync(id);
@@ -49,10 +85,20 @@ namespace ia_learning.Controllers.V1
             ia.Tipo = model.Tipo;
 
             await _context.SaveChangesAsync();
-            return Ok(ia);
+
+            var result = LinkHelper.WithLinks(
+                ia,
+                Url,
+                "GetIA",
+                "UpdateIA",
+                "DeleteIA",
+                ia.Id
+            );
+
+            return Ok(result);
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete("{id}", Name = "DeleteIA")]
         public async Task<IActionResult> Delete(int id)
         {
             var ia = await _context.IAs.FindAsync(id);

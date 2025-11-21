@@ -1,10 +1,11 @@
 ﻿using OpenAI.Chat;
+using Microsoft.Extensions.Configuration;
 
 namespace ia_learning.OpenAI
 {
     public class OpenAIClientHelper
     {
-        private readonly ChatClient _chatClient;
+        private readonly ChatClient _client;
 
         public OpenAIClientHelper(IConfiguration configuration)
         {
@@ -13,14 +14,20 @@ namespace ia_learning.OpenAI
             if (string.IsNullOrWhiteSpace(apiKey))
                 throw new Exception("Chave da OpenAI não encontrada. Configure 'OpenAI:ApiKey' no appsettings.json.");
 
-            _chatClient = new ChatClient("gpt-4o-mini", apiKey);
+            _client = new ChatClient(
+                model: "gpt-4o-mini",
+                apiKey: apiKey
+            );
         }
 
         public async Task<string> EnviarMensagem(string prompt)
         {
-            var resposta = await _chatClient.CompleteChatAsync(prompt);
+            var response = await _client.CompleteChatAsync(new[]
+            {
+                new UserChatMessage(prompt)
+            });
 
-            return resposta.Value.Content[0].Text;
+            return response.Value.Content[0].Text;
         }
     }
 }

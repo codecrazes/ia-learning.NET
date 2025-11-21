@@ -1,5 +1,6 @@
-using ia_learning.Data;
 using ia_learning.Configurations;
+using ia_learning.Data;
+using ia_learning.OpenAI;
 using ia_learning.Services;
 using Microsoft.EntityFrameworkCore;
 using System.Text.Json.Serialization;
@@ -18,11 +19,12 @@ builder.Services.AddSwaggerSetup();
 builder.Services.AddApiVersioningSetup();
 builder.Services.AddHealthCheckSetup();
 
-var openAiKey = Environment.GetEnvironmentVariable(
-    builder.Configuration["OpenAI:ApiKey"]
-);
+var openAiKey =
+    Environment.GetEnvironmentVariable("OPENAI_API_KEY")
+    ?? builder.Configuration["OpenAI:ApiKey"];
 
 builder.Services.AddSingleton(new OpenAIService(openAiKey));
+builder.Services.AddScoped<OpenAIClientHelper>();
 
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseOracle(builder.Configuration.GetConnectionString("DefaultConnection"))
@@ -41,6 +43,6 @@ app.UseSwaggerSetup();
 app.UseHttpsRedirection();
 app.UseAuthorization();
 
-app.MapControllers(); 
+app.MapControllers();
 
 app.Run();
