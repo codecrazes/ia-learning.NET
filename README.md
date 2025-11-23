@@ -106,13 +106,15 @@ Swagger disponível em:
 
 ## 🔄 Exemplos de Requisições (JSON para Teste)
 
-
+### Usuario
 ```json
 {
   "nome": "Jose bezerra",
   "email": "jose@example.com"
 }
 ```
+
+### Tarefa
 ```bash
 {
   "nome": "IA de analises Profissionais",
@@ -122,6 +124,14 @@ Swagger disponível em:
   "tipo": "Educação"
 }
 ```
+### Tarefa com Paginação
+
+| Nome     | Tipo | Exemplo |
+|----------|------|---------|
+| page     | int  | `1`     |
+| pageSize | int  | `5`     |
+
+### Recomendação
 ```bash
 {
   "titulo": "Aprender conceitos de Machine Learning supervisionado",
