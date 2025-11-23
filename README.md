@@ -43,7 +43,7 @@ A proposta é mostrar como a IA pode ser utilizada como ferramenta de aprendizad
 
 ✔️ Estrutura
 
-✅ Versão 1 – Recursos Principais
+## ✅ Versão 1 – Recursos Principais
 
 A v1 contém todos os módulos base da aplicação:
 
@@ -59,7 +59,7 @@ Recomendações – Sugestões usando OpenAI com base na tarefa
 
 Habilidades – Cadastro de habilidades criada
 
-🚀 Versão 2 – O que foi adicionado
+## 🚀 Versão 2 – O que foi adicionado
 
 A v2 possui tudo da v1, mais:
 
@@ -102,7 +102,7 @@ dotnet test
 
 Swagger disponível em:
 
-[http://localhost:5056/swagger/index.html](http://localhost:5056/swagger/index.html)]
+[http://localhost:5056/swagger/index.html](http://localhost:5056/swagger/index.html)
 
 ## 🔄 Exemplos de Requisições (JSON para Teste)
 
