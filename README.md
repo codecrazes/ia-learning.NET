@@ -89,6 +89,14 @@ A v2 possui tudo da v1, mais:
   setx OPENAI_API_KEY ""
  ```
 
+3. Restaure as dependências e execute o projeto:
+
+```bash
+dotnet restore
+
+dotnet run
+```
+
 ### 🧪 Como Rodar os Testes (xUnit)
 
 ```bash
