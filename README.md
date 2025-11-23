@@ -122,7 +122,7 @@ Swagger disponível em:
 }
 ```
 
-### Tarefa
+### IA
 ```bash
 {
   "nome": "IA de analises Profissionais",
@@ -132,14 +132,8 @@ Swagger disponível em:
   "tipo": "Educação"
 }
 ```
-### Tarefa com Paginação
 
-| Nome     | Tipo | Exemplo |
-|----------|------|---------|
-| page     | int  | `1`     |
-| pageSize | int  | `5`     |
-
-### Recomendação
+### Tarefa
 ```bash
 {
   "titulo": "Aprender conceitos de Machine Learning supervisionado",
@@ -150,5 +144,10 @@ Swagger disponível em:
   "iaId": 2
 }
 ```
+### Tarefa com Paginação
 
+| Nome     | Tipo | Exemplo |
+|----------|------|---------|
+| page     | int  | `1`     |
+| pageSize | int  | `5`     |
 
